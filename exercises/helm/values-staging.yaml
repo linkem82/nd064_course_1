@@ -8,7 +8,7 @@ image:
 
 resources:
   requests:
-  memory: 128Mi
+    memory: 128Mi
 
 configmap:
   data: "version: 1.18.0"
