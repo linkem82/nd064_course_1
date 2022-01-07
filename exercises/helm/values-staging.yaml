@@ -4,7 +4,10 @@ namespace:
 replicasCount: 1
 
 image:
+  name: nginx
   tag: 1.18.0
+  pullPolicy: IfNotPresent
+  
 
 resources:
   requests:
