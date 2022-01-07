@@ -1,13 +1,14 @@
 namespace:
- name: staging
+  name: staging
 
 replicasCount: 1
 
 image:
- tag: 1.18.0
+  tag: 1.18.0
 
 resources:
- memory: 128Mi
+  requests:
+  memory: 128Mi
 
 configmap:
- data: "version: 1.18.0"
+  data: "version: 1.18.0"

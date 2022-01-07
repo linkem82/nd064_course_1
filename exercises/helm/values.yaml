@@ -1,20 +1,21 @@
 namespace:
- name: demo
+  name: demo
 
 replicasCount: 3
 
 image:
- name: nginx
- tag: alpine
- pullPolicy: IfNotPresent
+  name: nginx
+  tag: alpine
+  pullPolicy: IfNotPresent
 
 resources:
- cpu: 50m
- memory: 256Mi
+  requests:
+    cpu: 50m
+    memory: 256Mi
 
 service:
- type: ClusterIP
- port: 80
+  type: ClusterIP
+  port: 80
 
 configmap:
- data: "version: 1.17.0"
+  data: "version: 1.17.0"
